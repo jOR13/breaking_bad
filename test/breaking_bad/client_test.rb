@@ -9,7 +9,7 @@ module BreakingBad
     end
 
     def test_client_class_must_exist
-      refute_nil Client.new("https://www.breakingbadapi.com/api/")
+      refute_nil Client.new("https://www.breakingbadapi.com/api")
     end
 
     def test_client_class_must_fetch_all_quotes
