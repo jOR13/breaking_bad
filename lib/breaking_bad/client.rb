@@ -1,8 +1,6 @@
 # frozen_string_literal: true
-
 require "json"
 require "net/http"
-
 module BreakingBad
   class Client
     def initialize(url)
@@ -11,7 +9,18 @@ module BreakingBad
 
     def get(path)
       response = Net::HTTP.get_response(URI.join(@url, path))
-      JSON.parse(response.body, symbolize_names: true)
+      case response
+      when Net::HTTPOK
+        JSON.parse(response.body, symbolize_names: true)
+      when Net::HTTPSuccess
+        # JSON.parse(response.body, symbolize_names: true)
+      when Net::HTTPUnauthorized
+        raise ClientError, "Unauthorized"
+      when Net::HTTPNotFound
+        raise ClientError, "Not Found"
+      else
+        raise ServerError, "Unknown Error"
+      end      
     end
   end
 end

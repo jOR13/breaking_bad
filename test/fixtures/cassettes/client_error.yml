@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.breakingbadapi.com/api/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.breakingbadapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 24 Dec 2021 06:11:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '209'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9990'
+      X-Ratelimit-Reset:
+      - '1640327097'
+      Etag:
+      - W/"d1-wn9dmSWrEUp1hys2YX5SnVSCJKc"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"characters":"https://breakingbadapi.com/api/characters","episodes":"https://breakingbadapi.com/api/episodes","quotes":"https://breakingbadapi.com/api/quotes","deaths":"https://breakingbadapi.com/api/deaths"}'
+  recorded_at: Fri, 24 Dec 2021 06:11:44 GMT
+recorded_with: VCR 6.0.0
