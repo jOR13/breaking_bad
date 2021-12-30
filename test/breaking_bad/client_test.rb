@@ -14,11 +14,9 @@ module BreakingBad
 
     def test_client_must_raise_an_exception_when_path_missing
       VCR.use_cassette("client_error") do
-
         assert_raises BreakingBad::ClientError do
           client.get("")
         end
-        
       end
     end
 
@@ -35,6 +33,7 @@ module BreakingBad
         assert_instance_of Array, client.get("characters/8")
       end
     end
+
     def test_fetch_all_episodes
       VCR.use_cassette("episodes") do
         assert_instance_of Array, client.get("episodes")

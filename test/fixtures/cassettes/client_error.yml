@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.breakingbadapi.com/api/
+    uri: https://www.breakingbadapi.com/api/s
     body:
       encoding: US-ASCII
       string: ''
@@ -23,11 +23,11 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Fri, 24 Dec 2021 06:11:44 GMT
+      - Thu, 30 Dec 2021 03:47:19 GMT
       Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '209'
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       X-Powered-By:
@@ -37,15 +37,43 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10000'
       X-Ratelimit-Remaining:
-      - '9990'
+      - '9908'
       X-Ratelimit-Reset:
-      - '1640327097'
+      - '1640836497'
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - public, max-age=0
+      Last-Modified:
+      - Sat, 20 Nov 2021 22:39:36 GMT
       Etag:
-      - W/"d1-wn9dmSWrEUp1hys2YX5SnVSCJKc"
+      - W/"921-17d3f81460e"
       Vary:
       - Accept-Encoding
     body:
-      encoding: UTF-8
-      string: '{"characters":"https://breakingbadapi.com/api/characters","episodes":"https://breakingbadapi.com/api/episodes","quotes":"https://breakingbadapi.com/api/quotes","deaths":"https://breakingbadapi.com/api/deaths"}'
-  recorded_at: Fri, 24 Dec 2021 06:11:44 GMT
+      encoding: ASCII-8BIT
+      string: <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut
+        icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta
+        name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><title>The
+        Breaking Bad API</title><meta name="Description" content="If you're looking
+        for the greatest API for the best tv show, look no further. Here is the one
+        and only, Breaking Bad API documentation"/><meta name="google-site-verification"
+        content="dZ5jz5BFOr9lo-hgKTgT77DavxzbF7L_RBGftqTLBRA"/><link href="/static/css/main.887a180a.chunk.css"
+        rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run
+        this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var
+        r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r
+        in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return
+        c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var
+        t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return
+        e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return
+        l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof
+        Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return
+        r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof
+        r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var
+        r=e&&e.__esModule?function(){return e.default}:function(){return e};return
+        f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var
+        r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var
+        o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.09181c5c.chunk.js"></script><script
+        src="/static/js/main.f4f93aaf.chunk.js"></script></body></html>
+  recorded_at: Thu, 30 Dec 2021 03:47:21 GMT
 recorded_with: VCR 6.0.0

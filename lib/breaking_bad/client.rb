@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "json"
 require "net/http"
 module BreakingBad
@@ -20,7 +21,10 @@ module BreakingBad
         raise ClientError, "Not Found"
       else
         raise ServerError, "Unknown Error"
-      end      
+      end
     end
+
+    
+
   end
 end
