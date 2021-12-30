@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Get all characters:
+
+    $ BreakingBad::Character.find_all
+
+Get all Episodes:
+    
+    $ BreakingBad::Episode.find_all
+
+
+
 
 ## Development
 
