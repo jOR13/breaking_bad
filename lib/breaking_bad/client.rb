@@ -23,8 +23,5 @@ module BreakingBad
         raise ServerError, "Unknown Error"
       end
     end
-
-    
-
   end
 end

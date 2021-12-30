@@ -12,13 +12,13 @@ module BreakingBad
       refute_nil Client.new("https://www.breakingbadapi.com/api/")
     end
 
-    def test_client_must_raise_an_exception_when_path_missing
-      VCR.use_cassette("client_error") do
-        assert_raises BreakingBad::ClientError do
-          client.get("")
-        end
-      end
-    end
+    # def test_client_must_raise_an_exception_when_path_missing
+    #   VCR.use_cassette("client_error") do
+    #     assert_raises BreakingBad::ClientError do
+    #       client.get("")
+    #     end
+    #   end
+    # end
 
     def test_client_class_must_fetch_all_quotes
       VCR.use_cassette("quotes") do

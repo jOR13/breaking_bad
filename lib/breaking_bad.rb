@@ -12,7 +12,6 @@ module BreakingBad
   class Error < StandardError; end
   class ClientError < Error; end
   class ServerError < Error; end
-  
 
   # quotes
   def self.find_quotes
@@ -76,6 +75,4 @@ module BreakingBad
   def self.find_episode_by_series(series)
     Episode.new.find_by_series(series)
   end
-  
-  
 end

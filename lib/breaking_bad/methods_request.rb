@@ -8,7 +8,7 @@ module BreakingBad
 
     def all
       threads = []
-      threads << Thread.new { client.get("#{endpoint_name("s")}") }
+      threads << Thread.new { client.get(endpoint_name("s").to_s) }
       threads.map(&:value)
     end
 
