@@ -2,7 +2,7 @@
 
 This is a gem wrapper for the [Breaking Bad](https://www.breakingbadapi.com/) API.
 
-this gem was created to learn how to works the gems on ruby.
+this gem was created to learn how works the gems on ruby.
 
 this gem use ruby threads to make the api response faster and more reliable.
 
