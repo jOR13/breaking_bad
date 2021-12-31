@@ -6,9 +6,13 @@ this gem was created to learn how works the gems on ruby.
 
 this gem use ruby threads to make the api response faster and more reliable.
 
-you can easily access the Breaking Bad API by using the following code:
+Rubycritic 
 
 ![Screenshot 2021-12-31 001448](https://user-images.githubusercontent.com/11560961/147809415-94b6c708-fceb-404f-bdae-fbfb9377a2b2.png)
+
+
+you can easily access the Breaking Bad API by using the following code:
+
 
 
 ## Installation
