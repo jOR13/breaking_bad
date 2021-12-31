@@ -4,24 +4,43 @@ require "json"
 require "net/http"
 module BreakingBad
   class Client
-    def initialize(url)
-      @url = url
+    attr_accessor :uri, :response
+
+    def initialize(uri)
+      @uri = uri
+      @response = nil
     end
 
     def get(path)
-      response = Net::HTTP.get_response(URI.join(@url, path))
-      case response
-      when Net::HTTPOK
-        JSON.parse(response.body, symbolize_names: true)
-      when Net::HTTPSuccess
-        # JSON.parse(response.body, symbolize_names: true)
-      when Net::HTTPUnauthorized
-        raise ClientError, "Unauthorized"
-      when Net::HTTPNotFound
-        raise ClientError, "Not Found"
-      else
-        raise ServerError, "Unknown Error"
-      end
+      uri = URI.join(@uri, path)
+      response = Net::HTTP.get_response(uri)
+      @response = JSON.parse(response.body, symbolize_names: true)
     end
+
+    # this api wont support post, put, patch and delete methods!
+
+    # def post(path, body)
+    #    uri = URI.join(@uri, path)
+    #   response = Net::HTTP.post_form(uri, body)
+    #   @response = JSON.parse(response.body, symbolize_names: true)
+    # end
+
+    # def put(path, body)
+    #    uri = URI.join(@uri, path)
+    #   response = Net::HTTP.put(uri, body)
+    #   @response = JSON.parse(response.body, symbolize_names: true)
+    # end
+
+    # def delete(path)
+    #    uri = URI.join(@uri, path)
+    #   response = Net::HTTP.delete(uri)
+    #   @response = JSON.parse(response.body, symbolize_names: true)
+    # end
+
+    # def patch(path, body)
+    #    uri = URI.join(@uri, path)
+    #   response = Net::HTTP.patch(uri, body)
+    #   @response = JSON.parse(response.body, symbolize_names: true)
+    # end
   end
 end

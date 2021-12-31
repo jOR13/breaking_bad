@@ -3,7 +3,7 @@
 require "test_helper"
 
 module BreakingBad
-  class ClientTest < Minitest::Test
+  class BreakingBadTest < Minitest::Test
     def client
       Client.new("https://www.breakingbadapi.com/api/")
     end
