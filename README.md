@@ -8,6 +8,9 @@ this gem use ruby threads to make the api response faster and more reliable.
 
 you can easily access the Breaking Bad API by using the following code:
 
+https://gyazo.com/760294872108ec4fe40300874821e5c8
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
