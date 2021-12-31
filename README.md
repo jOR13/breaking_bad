@@ -1,8 +1,12 @@
 # BreakingBad
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/breaking_bad`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a gem wrapper for the [Breaking Bad](https://www.breakingbadapi.com/) API.
 
-TODO: Delete this and the text above, and describe your gem
+this gem was created to learn how to works the gems on ruby.
+
+this gem use ruby threads to make the api response faster and more reliable.
+
+you can easily access the Breaking Bad API by using the following code:
 
 ## Installation
 
@@ -22,16 +26,29 @@ Or install it yourself as:
 
 ## Usage
 
+Basic Methods for all enpoints:
+
+    $ all
+    $ find(id)
+    $ random (in this method you can pass a author name to get ramdom quotes from that author).
+    
 Get all characters:
 
     $ BreakingBad::Character.find_all
+    $ BreakingBad::Character.find_by_category(category)
+    $ BreakingBad::Character.find_by_name(name)
+    $ BreakingBad::Character.find_with_limit(limit)
 
 Get all Episodes:
     
     $ BreakingBad::Episode.find_all
+    $ BreakingBad::Episode.find_by_series(series)
 
+Get all quotes
 
-
+    $ BreakingBad::Quote.find_all
+    $ BreakingBad::Quote.find_by_author(author)
+    $ BreakingBad::Quote.find_by_series(series)
 
 ## Development
 
